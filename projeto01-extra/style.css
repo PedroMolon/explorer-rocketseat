@@ -1,0 +1,88 @@
+:root {
+ --font-dosis: 'Dosis', sans-serif;
+ --font-open-sans: 'Open Sans', sans-serif;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ height: 100vh;
+ width: 100vw;
+ font-family: var(--font-open-sans);
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ padding-top: 128px;
+ align-items: center;
+ background: #ffffff;
+ gap: 64px;
+}
+
+main {
+ width: 626px;
+ height: 486px;
+ text-align: center;
+}
+
+#world {
+ margin-bottom: 32px;
+}
+
+h1 {
+ font-family: var(--font-dosis);
+ font-size: 32px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+ color: #3f3d56;
+ margin-bottom: 16px
+}
+
+span {
+ color: #ee24ff;
+}
+
+p {
+ font-family: var(--font-open-sans);
+ font-size: 15px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 22px;
+ color: #828282;
+ margin-bottom: 16px;
+}
+
+#line {
+ width: 486px;
+ height: 0;
+ border: 1px solid #eceff2;
+ margin-bottom: 16px;
+}
+
+#line-divisor {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 16px;
+ margin-top: 25px;
+}
+
+a {
+ text-align: center;
+ font-size: 15px;
+ font-family: var(--font-open-sans);
+ font-weight: 700;
+ font-style: normal;
+ line-height: 15px;
+ color: #3f3d56;
+}
+
+#wave {
+ width: 100%;
+ position: fixed;
+ bottom: 0px;
+}
