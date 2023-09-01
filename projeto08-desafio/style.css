@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-roboto: 'Roboto', sans-serif;
+  --hue: 194;
+  --bg-color: hsl(var(--hue), 0%, 100%);
+  --tt-color: hsl(var(--hue), 6%, 21%);
+  --bt-color: hsl(var(--hue), 9%, 89%);
+  --bt-tree-color: hsl(124, 90%, 35%);
+  --bt-cloud-rain-color: hsl(194, 97%, 31%);
+  --bt-store-front-color: hsl(17, 56%, 40%);
+  --bt-fire-place-color: hsl(1, 100%, 50%);
+  --tt-bt-active-color: hsl(var(--hue), 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+  color: var(--tt-color);
+  background: var(--bg-color);
+}
+
+html.dark {
+  --tt-color: hsl(var(--hue), 0%, 100%);
+  --bg-color: hsl(var(--hue), 6%, 21%);
+  --bt-color: hsl(var(--hue), 9%, 89%);
+  --bg-bt-active-color: hsl(var(--hue), 0%, 100%);
+}
+
+html.dark .ph-moon, html:not(.dark) .ph-sun {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+#toggle-mode {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  font-size: 4rem;
+  color: var(--tt-color);
+  transition: transform .2s ease;
+}
+
+#toggle-mode:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  appearance: none;
+}
+
+#app {
+  margin-top: -12rem;
+  gap: 19rem;
+}
+
+#timer {
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#time {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#controls {
+  gap: 4rem;
+}
+
+#controls button {
+  background: transparent;
+  border: 0;
+  font-size: 5rem;
+  transition: transform .2s ease;
+  color: var(--tt-color);
+}
+
+#controls button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#sounds {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 2fr);
+  gap: 3.2rem;
+}
+
+#sounds button {
+  border: 0;
+  border-radius: 1rem;
+  font-size: 6rem;
+  padding: 1.6rem;
+  transition: transform .2s ease;
+}
+
+#sounds button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.running .ph-play-circle, html:not(.running) .ph-pause-circle {
+  display: none;
+}
+
+.tree-color {
+  background: var(--bt-tree-color);
+}
+
+.cloud-rain-color {
+  background: var(--bt-cloud-rain-color);
+}
+
+.store-front-color {
+  background: var(--bt-store-front-color);
+}
+
+.fire-place-color {
+  background: var(--bt-fire-place-color);
+}
