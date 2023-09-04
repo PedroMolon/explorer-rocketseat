@@ -1,0 +1,31 @@
+body {
+  background-image: url(../assets/exploration_img.png);
+}
+
+.exploration {
+  width: 100vw;
+  height: 90vh;
+  padding: 6.3rem 10.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#exploration {
+  color: #FFF;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%;
+  color: hsl(240, 9%, 89%);
+}
+
+p {
+  width: 64.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: hsl(240, 9%, 89%);
+}

@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-roboto: 'Roboto', sans-serif;
+  --color-white: #E0E0E5;
+  --tt-color: #C4C4CC;
+  --tt-hover-color: #E0E0E5;
+  --tt-bt-hover: #02789c;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  background-image: url(../assets/home_img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 10vh;
+  padding: 4rem 71.9rem 4rem 7.2rem;
+}
+
+nav {
+  display: flex;
+  gap: 3.2rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  gap: 3.2rem;
+}
+
+li {
+  padding: 0rem 1rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  color: var(--tt-color);
+}
+
+a:hover {
+  color: var(--tt-hover-color);
+  cursor: pointer;
+}
+
+#app {
+  height: 90vh;
+  display: flex;
+  gap: 2.4rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%;
+  color: var(--tt-hover-color);
+}
+
+.button {
+  background: transparent;
+  padding: 1.2rem 3.2rem;
+  border: 2px solid var(--color-white);
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: var(--tt-hover-color);
+  transition: all .3s ease-in-out;
+  animation: scale .5s;
+}
+
+.button:hover {
+  background: var(--color-white);
+  color: var(--tt-bt-hover);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

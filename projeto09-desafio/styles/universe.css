@@ -1,0 +1,31 @@
+body {
+  background-image: url(../assets/universe_img.png);
+}
+
+.universe {
+  width: 100vw;
+  height: 90vh;
+  padding: 6.3rem 10.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#universe {
+  color: #FFF;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%;
+  color: #E0E0E5;
+}
+
+p {
+  width: 64.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #E0E0E5;
+}
