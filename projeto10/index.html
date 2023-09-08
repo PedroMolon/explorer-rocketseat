@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>GitFavs</title>
+  <link rel="shortcut icon" href="assets/star-icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="src/main.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <img src="assets/logo.svg" alt="GitFav">
+      <div class="github-search">
+        <label class="sr-only" for="search-input">Digite o Github username que quer favoritar</label>
+        <input type="text" name="search-input" id="search-input" placeholder="Digite o Github username que quer favoritar">
+        <button><i class="ph ph-star"></i>FAVORITAR</button>
+      </div>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>Repositories</th>
+          <th>Followers</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="user">
+            <img src="https://avatars.githubusercontent.com/u/6643122?v=4" alt="Imagem de maykbrito">
+            <a href="https://github.com/maykbrito" target="_blank">
+              <p>Mayk Brito</p>
+              <span>/maykbrito</span>
+            </a>
+          </td>
+          <td class="repositories">
+            123
+          </td>
+          <td class="followers">
+            123
+          </td>
+          <td class="remove">
+            <button>Remover</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </div>
+</body>
+</html>

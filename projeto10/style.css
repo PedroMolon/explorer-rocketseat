@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-roboto: 'Roboto', sans-serif;
+  --tt-color: #FFFFFF;
+  --tt-table-color: #E1E1E6;
+  --bg-table-color: #092D38;
+  --tt-placeholder: #7C7C8A;
+  --remove-color: #F75A68;
+  --bg-input: #06181C;
+  --bg-button: #065E7C;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+  color: var(--tt-color);
+}
+
+.app {
+  max-width: 112rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8.7rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 29rem;
+}
+
+.github-search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+#search-input {
+  width: 43rem;
+  padding: 1.6rem;
+  background: var(--bg-input);
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--tt-placeholder);
+}
+
+#search-input::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--tt-placeholder);
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+.github-search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.2rem 3.2rem;
+  background: var(--bg-button);
+  color: var(--tt-color);
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  transition: all .3s ease;
+  box-shadow: var(--bg-table-color) 0px 7px 29px 0px;
+}
+
+.ph-star {
+  font-size: 2.3rem;
+}
+
+.github-search button:hover {
+  background: var(--tt-color);
+  color: var(--bg-button);
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-radius: 1.2rem;
+  border-spacing: 0;
+  box-shadow: #496a7486 0px 20px 30px -10px;
+  color: var(--tt-table-color);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 160%;
+  transition: all .3s ease;
+}
+
+table thead {
+  background: var(--bg-table-color);
+  text-align: left;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+table th:first-child {
+  border-radius: 1.2rem 0 0 0;
+}
+table th:last-child {
+  border-radius: 0 1.2rem 0 0;
+}
+
+table th {
+  padding: 1.6rem 1.6rem 1.6rem 4rem;
+}
+
+table td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+table tr:nth-child(odd) {
+  background: transparent;
+}
+table tr:nth-child(even) {
+  background: var(--bg-input);
+}
+
+td.user {
+  display: flex;
+  gap: 1.6rem;
+}
+
+td.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: var(--tt-table-color);
+}
+
+td.user a:hover {
+  color: #FFFFFF;
+}
+
+td.user a span {
+  font-weight: 400;
+}
+
+td.user a span:hover {
+  color: #FFFFFF;
+}
+
+td.remove button {
+  background: transparent;
+  border: none;
+  color: var(--remove-color);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 160%;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+td.remove button:hover {
+  color: #ff0015;
+  transform: scale(1.1);
+}
